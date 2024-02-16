@@ -227,7 +227,11 @@ table{
   background-color: #ffffff;
   padding: 2px;
   display: block;
-  overflow-x: scroll;
+}
+@media only screen and (max-width: 983px){
+  table{
+    overflow-x: scroll;
+  }
 }
 table th{
   background-color: #ad0f44;
