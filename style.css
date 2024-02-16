@@ -219,11 +219,15 @@ input, textarea{
 }
 .disciplinas{
   padding: 20px 10px;
+  width: 80%;
+  margin: auto;
 }
 table{
   margin: auto;
   background-color: #ffffff;
   padding: 2px;
+  display: block;
+  overflow-x: scroll;
 }
 table th{
   background-color: #ad0f44;
