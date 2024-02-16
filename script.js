@@ -2,12 +2,14 @@ function buscar(){
     var matricula = document.getElementById('matricula').value;
     var validacoes = document.getElementById('validacoes');
     var disciplinas = document.getElementById('disciplinas');
+    var atencao = document.getElementById('atencao');
     var nomeTopo = document.getElementById('nomeTopo');
     
     var i;
     
     validacoes.classList.add('displayNone');
     disciplinas.classList.remove('displayNone');
+    atencao.classList.remove('displayNone');
 
 
     /* INÍCIO PARA TROCAR */
