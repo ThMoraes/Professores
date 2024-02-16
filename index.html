@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang='pt-br'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+  <link rel='stylesheet' href='style.css'>
+  <link rel='icon' type='image/x-icon' href='img/afya-logo.ico'>
+  <title>Graduação | Disciplinas do(a) Professor(a)</title>
+</head>
+<body>
+
+  <section class='conteudoTopo'>
+    <h2 class='nomeTopo' id='nomeTopo'>Disciplinas do(a) Professor(a)</h2>
+  </section>
+
+    
+  <section id='validacoes' class='validacoes '>
+    <div class='validadores'>
+      <p class='validador'><span class='nome'><b>Matrícula:</b></span><input type='text' class='matricula' id='matricula' value='00364406712'></p>
+      <p class='validador'><input type='button' class='buscar' id='buscar' value='BUSCAR DISCIPLINAS' onclick='buscar()'></p>
+    </div>
+  </section>
+    
+  <section id='disciplinas' class='disciplinas displayNone'>
+    <table class='tabela'>
+      <tr>
+        <th style='text-transform: uppercase;'>MODELO</th> 
+        <th style='text-transform: uppercase;'>AV</th>
+        <th style='text-transform: uppercase;'>DISCIPLINA</th>
+        <th style='text-transform: uppercase;'>TIPO DE HORÁRIO</th>
+        <th style='text-transform: uppercase;'>Tipo Disciplina</th>
+        <th style='text-transform: uppercase;'>Dia da Semana do Encontro</th>
+        <th style='text-transform: uppercase;'>Faixa de Horário do Encontro</th>
+      </tr>
+
+      
+      <!-- INÍCIO PARA TROCAR -->
+
+      <tr class='05273261783 txtBold par displayNone'>
+        <td class='txtCenter'>GRD-0063</td>
+        <td class='txtCenter'>3AV</td>
+        <td>CONTABILIDADE EMPRESARIAL</td>
+        <td class='txtCenter'>FIXO</td>
+        <td class='txtCenter'>A</td>
+        <td class='txtCenter'>terça</td>
+        <td class='txtCenter'>20:00 às 20:40</td>
+      </tr>
+
+
+      <!-- FIM PARA TROCAR -->
+
+
+    </table>
+  </section>
+
+  <div id='assCont'>
+    <img src='img/Logo Unigranrio_Afya_ED.png' id='assinatura' alt='logos Unigranrio, Afya e Ensino Digital'>
+  </div>
+
+  <script src='//code.jquery.com/jquery-3.2.1.min.js'></script>
+  <script src='script.js'></script>
+  <script src='corLinha.js'></script>
+</body>
+</html>

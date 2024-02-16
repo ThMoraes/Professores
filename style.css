@@ -1,0 +1,297 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+	background:url(img/background_novo.png) repeat-x fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  word-wrap: break-word;
+}
+
+ul{
+  padding: 0;
+}
+
+
+/*nome no topo*/
+.conteudoTopo{
+  width: 47.5%;
+  margin: 0 auto;
+  padding: 10px 25px;
+  background-size: cover;
+  background-position: center;
+}
+
+.nomeTopo{
+  text-align: center;
+  border-radius: 10px;
+  background-color: #ad0f44;
+  color: #ffffff;
+  display: flex;
+  padding: 5px 0 5px 0;
+  align-items: center;
+  justify-content: center;
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
+
+.mud{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.calenmud{
+  color: #ff0000;
+  padding: 10px 0 0 0;
+}
+
+/*botão*/
+.conteudoMenu{
+  width: 98%;
+  margin: 20px auto;
+  padding: 15px 10px;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+}
+#linkMenuSimulador{
+  background: #D31C5B;
+}
+#linkMenuCalendario{
+  background: #004F9F;
+}
+.linkMenu{
+  margin: auto 20px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 10px;
+  text-decoration: none;
+  color:#ffffff;
+  padding: 10px;
+  font-size: 18px;
+  width: 30%;
+}
+.nomeBotao{
+  font-weight: bolder;
+}
+.imgBotao{
+  height: 16px;
+  padding: 0px 10px;
+}
+
+
+/*conteudo*/
+.calendario{
+  max-width: 950px;
+  margin: 2.5px auto;
+  padding: 15px 40px;
+  display: grid;
+  grid-template-columns: 20% 80%;
+  border-radius: 8px;
+}
+
+.conteudoMes{
+  margin: 6px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0);
+}
+#mes{
+  text-align: center;
+  border-radius: 10px;
+  background-color: #ad0f44;
+  color: #ffffff;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bolder;
+  font-size: 18px;
+}
+
+.conteudoEvento{
+  margin: 6px;
+  border: #444947 solid 2px;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+.evento{
+  display: grid;
+  grid-template-columns: 40px 1fr 90px;
+  list-style: none;
+  text-align: center;
+  padding: 6px 5px;
+}
+.evento:nth-child(even){
+  background-color: #f2f2f2;
+}
+.evento:last-child{
+  border-radius: 0px 0px 10px 10px;
+}
+.descricaoEvento{
+  font-size: 18px;
+}
+#dia{
+  color: #D31C5B;
+  font-weight: bolder;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+#descricao{
+  color: #161817;
+  text-align: left;
+}
+#hora{
+  color: #004F9F;
+  font-weight: bolder;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+#assCont{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#assinatura {
+  padding: 5px 0 0 0;
+  height: 45px;
+  width: 400px;
+}
+
+input, textarea{
+  border: solid 1px #00000000;
+  border-radius: 10px;
+}
+.validacoes{
+  width: 50vw;
+  height: calc(100vh - 150px);
+  margin: 20px auto;
+  padding: 15px 10px;
+  display: flex;
+  border-radius: 15px;
+}
+.validadores{
+  margin: auto;
+  font-size: 25px;
+  background-color: #0000005b;
+  border-radius: 10px;
+  padding: 25px;
+}
+.validador{
+  margin: auto;
+  padding: 15px 5px;
+  display: flex;
+}
+.nome{
+  padding-right: 5px;
+  color: #ffffff;
+}
+.matricula{
+  font-size: 18px;
+  text-align: center;
+  background-color: #dcdcdc;
+}
+.buscar{
+  font-weight: bold;
+  margin: auto;
+  background-color: #ad0f44;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.displayNone{
+  display: none;
+}
+.disciplinas{
+  padding: 20px 10px;
+}
+table{
+  margin: auto;
+  background-color: #ffffff;
+  padding: 2px;
+}
+table th{
+  background-color: #ad0f44;
+  padding: 5px 10px;
+  color: #ffffff;
+}
+table td{
+  padding: 5px;
+}
+.txtBold{
+  font-weight: bold;
+}
+.txtCenter{
+  text-align: center;
+}
+.par{
+  background-color: #f9f9f9;
+}
+.impar{
+  background-color: #f2f2f2;
+}
+
+/* ----- Responsive CSS ----- */
+
+@media only screen and (max-width: 740px){
+  .conteudoTopo{
+    grid-template-columns: 100%;
+    width: 100%;
+    padding: 3px; 
+  }
+  .calendario{
+    grid-template-columns: 100%;
+    width: 100%;
+    padding: 3px; 
+  }
+  .evento{
+    display: grid;
+    grid-template-columns: 30px 1fr 100px;
+  }
+}
+
+@media only screen and (max-width: 500px){
+  .evento{
+    grid-template-columns: 40px 1fr 55px;
+  }
+}
+
+@media only screen and (max-width: 360px){
+  #dia{
+    margin-right: 3px;
+    margin-left: 3px;
+  }
+  #descricao{
+    margin-left: 10px;
+  }
+}
+
+#descricaoAp4{
+  color: #c90e0e;
+  text-align: left;
+}
+
+.descricaoAlerta{
+  color: rgb(209, 189, 11);
+
+}
+
+.assinatura{
+  text-align-last: center;
+  color: rgb(0, 0, 0)
+}
